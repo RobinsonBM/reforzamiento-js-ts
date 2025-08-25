@@ -1,16 +1,16 @@
-interface Hero {
+export interface Hero {
   id: number;
   name: string;
   owner: Owner;
 }
 
 // type Owner = "DC" | "Marvel"; // se crea cuando tengo valores especificos que tengo que introducir
-enum Owner {
+export enum Owner {
   DC = "DC",
   Marvel = "Marvel",
 }
 
-const heroes: Hero[] = [
+export const heroes: Hero[] = [
   {
     id: 1,
     name: "Batman",
